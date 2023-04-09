@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Đếm số kí tự của mỗi chữ cái</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .x {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        label {
+            font-size: 1.2em;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+        #result {
+            margin: 30px auto;
+            font-size: 1.2em;
+        }
+        table {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 5px 13px;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Đếm số kí tự của mỗi chữ cái trong chuỗi</h1>
+        <form>
+            <label for="inputStr">Nhập chuỗi cần đếm:</label>
+            <input type="text" id="inputStr" name="inputStr"><br><br>
+            <button type="button" onclick="count()">Đếm</button>
+        </form>
+    
+    <div class = 'x'>
+          <table id="result">
+            
+          </table>
+    </div>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>
