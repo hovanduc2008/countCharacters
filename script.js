@@ -1,5 +1,5 @@
 function count() {
-    var inputStr = document.getElementById("inputStr").value;
+    var inputStr = document.getElementById("inputStr").value.toUpperCase();
     var counts = {};
     for (var i = 0; i < inputStr.length; i++) {
       var char = inputStr.charAt(i);
